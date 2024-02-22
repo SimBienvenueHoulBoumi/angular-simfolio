@@ -13,7 +13,7 @@ import { WorksNumberComponent } from '../components/works-number/works-number.co
     DevServicesComponent,
     FooterComponent,
     ProfileDescriptionComponent,
-    WorksNumberComponent
+    WorksNumberComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

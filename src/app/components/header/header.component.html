@@ -5,21 +5,22 @@
 <div class="relative">
   <div class="absolute inset-0 flex flex-col items-center justify-center">
     <div class="uppercase">
-      <mat-card
+      <div
         [style]="{
-          'background-color': '#9DC5F3',
           'border-radius': '5px',
           width: '200px',
           margin: 'auto',
           color: 'black',
           fontWeight: 'bold'
         }"
+      ></div>
+      <h1
+        [style]="{
+          'text-shadow': '4px 4px 0 #9DC5F3'
+        }"
+        class="uppercase text-center font-bold text-[25px] text-white m-4 p-4 shadow-lg"
       >
-        <mat-card-content [style]="{ margin: '10px' }"
-          >developpeur web</mat-card-content
-        >
-      </mat-card>
-      <h1 class="uppercase text-center font-bold text-xl text-white m-4 p-4">
+        <p>developpeur web</p>
         Votre site vitrine et vos API à portée de main
       </h1>
     </div>
@@ -33,7 +34,6 @@
     [style]="{
       'background-color': 'rgba(0, 0, 0, 0.75)',
       color: 'white',
-      borderRadius: '5px'
     }"
   >
     <mat-card-content>construisons votre backend</mat-card-content>
@@ -42,7 +42,6 @@
     [style]="{
       'background-color': 'rgba(0, 0, 0, 0.75)',
       color: 'white',
-      borderRadius: '5px'
     }"
   >
     <mat-card-content>mettons en place votre site vitrine</mat-card-content>
@@ -63,8 +62,7 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 1200px){
-
+  @media screen and (min-width: 1200px) {
     .background-image {
       height: 50vh;
     }
