@@ -1,0 +1,20 @@
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: unset;
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+
+.appropos {
+  margin-top: 5px;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #333;
+  background-color: #D8ECBE;
+  text-align: center;
+  width: 80px;
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 5px;
+}

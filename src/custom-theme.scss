@@ -1,0 +1,25 @@
+
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+
+$simfolio-angular-ts-primary: mat.define-palette(mat.$blue-palette);
+$simfolio-angular-ts-accent: mat.define-palette(mat.$green-palette, A200, A100, A400);
+
+$simfolio-angular-ts-warn: mat.define-palette(mat.$red-palette);
+
+
+$simfolio-angular-ts-theme: mat.define-light-theme((
+  color: (
+    primary: $simfolio-angular-ts-primary,
+    accent: $simfolio-angular-ts-accent,
+    warn: $simfolio-angular-ts-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($simfolio-angular-ts-theme);
+

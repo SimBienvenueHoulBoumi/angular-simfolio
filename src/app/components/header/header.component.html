@@ -1,0 +1,83 @@
+<mat-toolbar color="accent">
+  <span class="uppercase font-bold">{{ appName }}</span>
+</mat-toolbar>
+
+<div class="relative">
+  <div class="absolute inset-0 flex flex-col items-center justify-center">
+    <div class="uppercase">
+      <mat-card
+        [style]="{
+          'background-color': '#9DC5F3',
+          'border-radius': '5px',
+          width: '200px',
+          margin: 'auto',
+          color: 'black',
+          fontWeight: 'bold'
+        }"
+      >
+        <mat-card-content [style]="{ margin: '10px' }"
+          >developpeur web</mat-card-content
+        >
+      </mat-card>
+      <h1 class="uppercase text-center font-bold text-xl text-white m-4 p-4">
+        Votre site vitrine et vos API à portée de main
+      </h1>
+    </div>
+  </div>
+
+  <div class="background-image"></div>
+</div>
+
+<div class="card-container">
+  <mat-card
+    [style]="{
+      'background-color': 'rgba(0, 0, 0, 0.75)',
+      color: 'white',
+      borderRadius: '5px'
+    }"
+  >
+    <mat-card-content>construisons votre backend</mat-card-content>
+  </mat-card>
+  <mat-card
+    [style]="{
+      'background-color': 'rgba(0, 0, 0, 0.75)',
+      color: 'white',
+      borderRadius: '5px'
+    }"
+  >
+    <mat-card-content>mettons en place votre site vitrine</mat-card-content>
+  </mat-card>
+</div>
+
+<style>
+  .background-image {
+    background-image: url("../../../assets/images/cambg_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px){
+
+    .card-container {
+      margin-top: -15rem;
+      margin: auto;
+      width: 30%;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+    margin-top: -2rem;
+    font-size: 12px;
+  }
+</style>

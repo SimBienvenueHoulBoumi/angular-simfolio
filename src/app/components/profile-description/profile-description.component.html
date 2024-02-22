@@ -1,0 +1,118 @@
+<section>
+  <div>
+    <div class="flex justify-center">
+      <img src="../../../assets/images/photo-profil.jpg" alt="background" />
+    </div>
+  </div>
+  <div>
+    <div class="flex flex-col justify-center md:flex-row md:justify-start">
+      <!-- Modification -->
+      <div class="appropos">appropos</div>
+      <div class="uppercase">
+        <p
+          [style]="{
+              fontWeight: '900',
+              fontSize: '1.2rem',
+              marginTop: '0.75rem',
+              marginBottom: '0.5rem',
+              marginInline: '1.5rem',
+            }"
+          class="titre-description"
+        >
+          bref apperçu de mon profil de developpeur !
+        </p>
+      </div>
+    </div>
+    <div>
+      <p
+        [style]="{
+          marginTop: '0.5rem',
+          marginBottom: '0.5rem',
+          marginInline: '1.5rem',
+          color: 'gray',
+          textShadow: '1px 1px 0 #8AA5C5'
+        }"
+      >
+        Jeune développeur passionné de nouvelles technologies, je suis avant
+        tout un administrateur réseau en reconversion. Grâce à mes multiples
+        formations et à mon acharnement, je suis parvenu à développer des
+        compétences dans le domaine du web. Aujourd’hui, plus confiant que
+        jamais, je vous propose un accompagnement dans la réalisation de vos
+        projets numériques qui touchent à ma spécialisation.
+      </p>
+      <div
+        [style]="{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          backgroundColor: '#9DC5F3',
+          boxShadow: '0 0 0 0.1rem #9DC5F3',
+          marginTop: '1.5rem',
+          marginBottom: '0.5rem',
+          padding: '0.5rem',
+          borderRadius: '5px',
+          width: '92%',
+          margin: 'auto',
+          fontWeight: '500'
+        }"
+      >
+        <p
+          [style]="{
+            fontSize: '1.5rem',
+            fontWeight: '100',
+            margin: '0.5rem'
+          }"
+        >
+          ✅
+        </p>
+        <p class="text-left w-3/4">
+          Transformez vos idées en réalités avec un développeur passionné et
+          expérimenté dans le domaine du web.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  img {
+    width: 200px;
+    border-radius: 50%;
+  }
+  .titre-description {
+    justify-content: center;
+    text-align: center;
+  }
+  @media screen and (min-width: 1000px) {
+    section {
+      display: flex;
+      width: 55%;
+      margin: auto;
+      flex-direction: row-reverse;
+    }
+
+    img {
+      width: 180vh;
+      height: 40vh;
+      margin-top: 35px;
+    }
+
+    .appropos {
+      font-size: 1.07rem;
+      width: 100px;
+      margin-left: 3.5%;
+      text-align: center;
+      text-shadow: 1px 1px 0 #8aa5c5;
+      margin-right: auto;
+    }
+
+    .titre-description {
+      justify-content: flex-start;
+      text-align: start;
+    }
+
+    section{
+        display: flex;
+    }
+  }
+</style>
